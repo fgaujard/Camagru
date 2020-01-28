@@ -1,27 +1,18 @@
-<!-- php part of login-->
 <?php 
-session_start(); 
-require_once('controllers/authController.php');
-
-
-
-
-
+    session_start(); 
+    require_once('../controllers/authController.php');
 ?>
-
-<!-- html part of login-->
 
 <html>
     
     <head>
         <meta charset="UTF-8" >
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
         <title>Register</title>
     </head>
     
     <body>
         <div class="page">
-            <?php include("./generate_header.php"); ?>
             <div>
                 <form action="create_account_page.php" method="post">
                     <h3>Register</h3>

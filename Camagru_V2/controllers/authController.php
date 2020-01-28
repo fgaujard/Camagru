@@ -1,6 +1,6 @@
 <?php
 
-require 'config/db.php';
+require '../config/db.php';
 
 $errors = array();
 $username = "";
@@ -73,3 +73,4 @@ if (isset($_POST['signup-button'])) {
         }
     }
 }
+?>

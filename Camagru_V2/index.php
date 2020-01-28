@@ -5,9 +5,9 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div class="page">
-            <?php include("./generate_header.php"); ?>
-            <?php include("./generate_page_content.php"); ?>
+        <div class="header">
+            <a href="/src/create_account_page.php">Sign Up!</a>
+            <a href="/src/login_page.php">Sign In!</a>
         </div>
     </body>
 </html>
