@@ -56,7 +56,7 @@ if (isset($_POST['signup-button'])) {
     //Check if email exists
     $sql = "SELECT * FROM users WHERE email='$email' LIMIT 1";
     $result = mysqli_query($conn, $sql);
-    if (mysqli_num_rowa($result) > 0) {
+    if (mysqli_num_rows($result) > 0) {
         $errors['email'] = 'Email already exists';
     }
 
