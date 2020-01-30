@@ -4,15 +4,8 @@ $username = "";
 $email = "";
 $errors = [];
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', 'fgaujard');
-define('DB_NAME', 'camagru');
-
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
-function sendVerificationEmail($usr_email, $token) {
-    $to = $usr_email;
+function sendVerificationEmail($email, $token) {
+    $to = $email;
     $subject = 'Signup verification';
     $message = "
     
