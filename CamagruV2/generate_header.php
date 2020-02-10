@@ -1,6 +1,4 @@
-<?php
-if ($_SESSION['is_logged']):
-?>
+<?php if ($_SESSION['id']): ?>
     <div id="header">
         <a href="./index.php">Camagru</a>
         <a href="./account_page.php">My Profile</a>

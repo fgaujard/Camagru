@@ -1,13 +1,8 @@
 <?php
 session_start();
+require "controllers/db.php";
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', 'fgaujard');
-define('DB_NAME', 'camagru');
-
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-
+//DO PDO
 if (isset($_GET['token'])) {
     $token = $_GET['token'];
     $sql = "SELECT * FROM users WHERE token='$token' LIMIT 1";

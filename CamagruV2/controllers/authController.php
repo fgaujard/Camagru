@@ -1,9 +1,12 @@
 <?php
 session_start();
+require "controllers/db.php";
 $username = "";
 $email = "";
 $errors = [];
 
+//DO PDO
+//function who send email ----------------------------------------------------------------------
 function sendVerificationEmail($email, $token) {
     $to = $email;
     $subject = 'Signup verification';
@@ -26,6 +29,7 @@ function sendVerificationEmail($email, $token) {
     // Our message above including the link
 }
 
+//----------------------------------------------------------------------------------------------
 //SIGN UP USER
 if (isset($_POST['signup-button'])) {
     if (empty($_POST['username'])) {
@@ -79,6 +83,7 @@ if (isset($_POST['signup-button'])) {
     }
 }
 
+//------------------------------------------------------------------------------
 //LOGIN 
 if (isset($_POST['login-button'])) {
     if (empty($_POST['username'])) {
