@@ -11,12 +11,12 @@
 
     <body>
     
-        <!-- Streaming video on main + add fx-->
+        <!-- Streaming video on main + add fx on top side-->
         <div class="video-wrap">
             <video id="video" playsinline autoplay></video>
         </div>
 
-        <!-- Trigger canvas web API -->
+        <!-- Trigger canvas web API on mid-->
         <div class="controller">
             <button id="snap">Capture</button>
 
@@ -28,7 +28,7 @@
 
         </div>
 
-        <!--Video SnapShot - display pic+fx on right side -->
+        <!--Video SnapShot - display pic+fx on back side -->
         <canvas id="canvas" width="640" height="480"><canvas> 
 
         <script type="text/javascript" src="webcam/snapshot.js"></script>

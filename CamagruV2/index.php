@@ -1,5 +1,5 @@
 <?php 
-include 'controllers/authController.php';
+include 'config/authController.php';
 include 'generate_header.php';
 if (empty($_SESSION['id'])) {
     header('location: login.php');
@@ -42,3 +42,4 @@ if (empty($_SESSION['id'])) {
     </div>
 </body>
 </html>
+<!--gallery pics here-->

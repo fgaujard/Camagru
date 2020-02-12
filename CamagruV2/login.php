@@ -1,4 +1,4 @@
-<?php include 'controllers/authController.php' ?>
+<?php include 'config/authController.php' ?>
 <?php include 'generate_header.php' ?>
 <!DOCTYPE html>
 <html lang='en'>

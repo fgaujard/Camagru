@@ -1,6 +1,6 @@
 <?php
 session_start();
-require "controllers/db.php";
+require "config/db_connection.php";
 
 //DO PDO
 if (isset($_GET['token'])) {
