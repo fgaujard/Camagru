@@ -1,0 +1,7 @@
+verify login and register
+protect all created file (header, authcontroll, snapshot, db and setup)
+
+do upload_image
+do filter
+do gallery (and do like & comment sytsm )
+create account page (with parameter of account change pass mail and username and delete account)
